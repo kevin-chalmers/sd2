@@ -96,3 +96,23 @@ function printStudents() {
     // Set the innerHTML to html
     main.innerHTML = html;
 }
+
+function addStudent() {
+    // Get the value in the student ID textbox.
+    var id = document.getElementById("studentID").value;
+    // Get the value in the student name textbox.
+    var name = document.getElementById("studentName").value;
+    // Get the value in the student programme textbox.
+    var programme = document.getElementById("studentProgramme").value;
+    // Clear the textboxes
+    document.getElementById("studentID").value = "";
+    document.getElementById("studentName").value = "";
+    document.getElementById("studentProgramme").value = "";
+    // Create the student object
+    // We lookup the programme from the programmes dictionary.
+    var student = new Student(id, name, programmes[programme]);
+    // Add student to the students array
+    students.push(student);
+    // Redisplay the table
+    printStudents();
+}

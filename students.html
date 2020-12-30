@@ -5,6 +5,22 @@
         <script src="student.js"></script>
     </head>
     <body onload="printStudents()">
+        <h2>Add New Student</h2>
+        <table>
+            <tr>
+                <td>ID</td>
+                <td><input id="studentID" type="text"></td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input id="studentName" type="text"></td>
+            </tr>
+            <tr>
+                <td>Programme</td>
+                <td><input id="studentProgramme" type="text"></td>
+            </tr>
+        </table>
+        <input type="button" value="Add Student" onclick="addStudent()">
         <h2>Students</h2>
         <div id="main"></div>
     </body>
