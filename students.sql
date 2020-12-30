@@ -51,6 +51,8 @@ INSERT INTO Students VALUES(1,'Kevin Chalmers');
 INSERT INTO Students VALUES(2,'Lisa Haskel');
 INSERT INTO Students VALUES(3,'Arturo Araujo');
 INSERT INTO Students VALUES(4,'Foo Bar');
+INSERT INTO Students VALUES(100,'Mohammed Ali');
+INSERT INTO Students VALUES(200,'Ada Lovelace');
 CREATE TABLE Student_Programme(
 id INT,
 programme VARCHAR(8),
